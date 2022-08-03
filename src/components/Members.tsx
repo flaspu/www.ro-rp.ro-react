@@ -183,7 +183,7 @@ class Members extends React.Component<any, IState> {
             sections.push((
                 <div>
                     <h2 className="text-4xl font-semibold text-[#333] my-10">{ section }</h2>
-                    <div className="grid grid-cols-4 gap-10">
+                    <div className="flex flex-col md:grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
                         { this.state.members.length === 0 ? <PMembers /> :
                             members
                         }

@@ -20,7 +20,7 @@ class Team extends React.Component {
 
     render() {
         return (
-            <div className="container mx-auto font-poppins">
+            <div className="container mx-auto font-poppins px-[30px] xl:px-0">
                 <Members />
             </div>
         );

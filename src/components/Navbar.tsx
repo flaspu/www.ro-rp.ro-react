@@ -19,9 +19,7 @@ export default function Navbar() {
             <div className="navbar px-[30px] md:px-0 py-[38px] lg:py-[58px] 2xl:px-[0px] flex justify-between items-center font-poppins">
                 <div className="flex items-center justify-between xl:justify-start w-full 2xl:gap-20 xl:gap-[50px] relativ">
                     <div className="branding z-10">
-                        <NavLink to="/">
-                            <img src={ Logo } alt="Romania Roleplay"></img>
-                        </NavLink>
+                        <img src={ Logo } alt="Romania Roleplay"></img>
                     </div>
                     <ul className={ menuClass }>
                         <NavLink to="/">Acasa</NavLink>

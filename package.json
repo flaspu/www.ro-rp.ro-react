@@ -1,5 +1,6 @@
 {
   "name": "www.ro-rp.ro",
+  "homepage": "https://www.ro-rp.ro/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
