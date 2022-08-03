@@ -70,10 +70,10 @@ class News extends React.Component<any, IState> {
                 <div className="container mx-auto font-poppins mt-20 px-[30px] xl:px-0 z-10">
                     <div className="flex justify-between items-center">
                         <h2 className="text-4xl font-semibold text-[#333] mb-4">Ultimele noutăți</h2>
-                        <a href="#" className="btn-sm bg-white text-sm text-slate-800 outline-primary">Vezi toate noutățile</a>
+                        <button className="btn-sm bg-white text-sm text-slate-800 outline-primary">Vezi toate noutățile</button>
                     </div>
                     {
-                        (this.state.news.length == 0) ? <PNews /> : 
+                        (this.state.news.length === 0) ? <PNews /> : 
                         <div className="lg:grid flex flex-col grid-cols-4 news gap-8 mt-4"> 
                             {cards}
                         </div>
