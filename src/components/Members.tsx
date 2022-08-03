@@ -94,21 +94,22 @@ class Members extends React.Component<any, IState> {
 
     componentDidMount() {    
         axios.get(TEAM_URL).then(res => {
-            this.state.team['Leadership'] = res.data.filter((x: IMember) => x.AdminLevel > 5);
-            this.state.team['Administratori'] = res.data.filter((x: IMember) => x.AdminLevel <= 5 && x.AdminLevel > 0);
-            this.state.team['Developeri'] = res.data.filter((x: IMember) => x.DeveloperLevel > 0);
-            this.state.team['Testeri'] = res.data.filter((x: IMember) => x.TesterLevel > 0);
-            this.state.team['Faction Management'] = res.data.filter((x: IMember) => x.FactionLevel > 0);
-            this.state.team['Property Management'] = res.data.filter((x: IMember) => x.PropertyLevel > 0);
-
             this.setState({
                 members: res.data,
+                team: {
+                    'Leadership': res.data.filter((x: IMember) => x.AdminLevel > 5),
+                    'Administratori': res.data.filter((x: IMember) => x.AdminLevel <= 5 && x.AdminLevel > 0),
+                    'Developeri': res.data.filter((x: IMember) => x.DeveloperLevel > 0),
+                    'Testeri': res.data.filter((x: IMember) => x.TesterLevel > 0),
+                    'Faction Management': res.data.filter((x: IMember) => x.FactionLevel > 0),
+                    'Property Management': res.data.filter((x: IMember) => x.PropertyLevel > 0)
+                }
             });
         });
     }
 
     getAvatar(avatar: string): string {
-        if(avatar == 'blank.png') {
+        if(avatar === 'blank.png') {
             return 'https://ucp.ro-rp.ro/assets/media/avatars/blank.png';
         } else {
             return 'https://ucp.ro-rp.ro/uploads/avatars/' + avatar;
@@ -118,7 +119,7 @@ class Members extends React.Component<any, IState> {
     getMemberRoles(username: string): string[] {
         let roles = [];
 
-        let member = this.state.members.find(x => x.Username == username);
+        let member = this.state.members.find(x => x.Username === username);
         if(member) {
             if(member.AdminLevel > 0) {
                 roles.push(AdminLevels[member.AdminLevel]);
@@ -183,7 +184,7 @@ class Members extends React.Component<any, IState> {
                 <div>
                     <h2 className="text-4xl font-semibold text-[#333] my-10">{ section }</h2>
                     <div className="grid grid-cols-4 gap-10">
-                        { this.state.members.length == 0 ? <PMembers /> :
+                        { this.state.members.length === 0 ? <PMembers /> :
                             members
                         }
                     </div>

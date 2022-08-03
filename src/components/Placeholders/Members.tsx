@@ -15,7 +15,7 @@ export default function PMembers(props: any) {
                     <div className="rounded-full avatar bg-slate-100"></div>
                 </div>
                 <div className="flex flex-col">
-                    <h2 className="text-lg font-semibold bg-slate-100 rounded-full" style={{ width: '100px', height: '14px' }}></h2>
+                    <div className="text-lg font-semibold bg-slate-100 rounded-full" style={{ width: '100px', height: '14px' }}></div>
                     <div className="roles flex-col">
                         {roles}
                     </div>

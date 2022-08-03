@@ -1,5 +1,4 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
 
 // Components
 import Hero from '../components/Hero';

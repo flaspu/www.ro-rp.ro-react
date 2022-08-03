@@ -23,7 +23,7 @@ export default function Steps() {
                         </div>
                     </div>
                     <div className="flex items-center justify-end w-full mx-20">
-                        <a href="#" className="btn bg-primary text-slate-800 outline-primary font-medium">Cumpără</a>
+                        <a href="https://store.rockstargames.com/en/game/buy-gta-v-premium-edition" className="btn bg-primary text-slate-800 outline-primary font-medium">Cumpără</a>
                     </div>
                 </div>
                 <div className="step shadow-lg flex flex-col xl:flex-row items-center xl:h-[200px] h-auto p-10 xl:p-0" style={ { backgroundImage: `url('${DownloadClient}')` } }>
@@ -38,7 +38,7 @@ export default function Steps() {
                         </div>
                     </div>
                     <div className="flex items-center justify-end w-full mx-20">
-                        <a href="#" className="btn bg-primary text-slate-800 outline-primary font-medium">Descarcă</a>
+                        <a href="https://cdn.rage.mp/public/files/RAGEMultiplayer_Setup.exe" className="btn bg-primary text-slate-800 outline-primary font-medium">Descarcă</a>
                     </div>
                 </div>
                 <div className="step shadow-lg flex flex-col xl:flex-row items-center xl:h-[200px] h-auto p-10 xl:p-0" style={ { backgroundImage: `url('${CreateAccount}')` } }>
@@ -53,7 +53,7 @@ export default function Steps() {
                         </div>
                     </div>
                     <div className="flex items-center justify-end w-full mx-20">
-                        <a href="#" className="btn bg-primary text-slate-800 outline-primary font-medium">Înregistrare</a>
+                        <a href="https://ucp.ro-rp.ro/" className="btn bg-primary text-slate-800 outline-primary font-medium">Înregistrare</a>
                     </div>
                 </div>
             </div>
