@@ -1,0 +1,70 @@
+.news {
+    padding-bottom: 100px;
+    .card {
+        .card-image {
+            background-size: cover;
+            background-position: center;
+            height: 260px;
+            @apply ease-in-out duration-300;
+        }
+
+        &:hover {
+            .card-image {
+                height: 0px;
+            }
+
+            p {
+                overflow:visible;
+            }
+        }
+
+        border-radius: 20px;
+        overflow: hidden;
+        height: 474px;
+        padding-bottom: 30px;
+
+        .card-header {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding-top: 30px;
+
+            padding-left: 35px;
+            padding-right: 35px;
+
+            .card-title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+
+        .separator {
+            background: #ecbf32;
+            box-shadow: 0 4px 15px rgba(251, 198, 12, 0.5) !important;
+            width: 100px;
+            height: 10px;
+            border-radius: 25rem;
+            margin: 1rem 35px;
+            
+        }
+
+        p {
+            padding-left: 35px;
+            padding-right: 35px;
+
+            height: 76px;
+            overflow: hidden;
+            
+            @apply ease-in-out duration-300;
+        }
+
+        @apply shadow-xl ease-in-out duration-300 border border-slate-100;
+    }
+}
+
+.eclipse-left {
+    background-repeat: no-repeat;
+    background-position: left top;
+}

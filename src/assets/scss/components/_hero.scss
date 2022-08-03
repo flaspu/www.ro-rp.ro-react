@@ -1,0 +1,57 @@
+.trailer {
+    height: 320px;
+
+    background-image: url('../../media/backgrounds/trailer.png');
+    background-size: cover;
+    
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eclipse-top-right {
+    background-image: url('../../media/eclipses/1.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.play {
+    background: transparentize($primary, 0.4);
+    border-radius: 25rem;
+    padding: 30px;
+    animation: pulse 2s infinite;
+    img {
+        width: 70px;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -moz-box-shadow: 0px 0px 0px 10px transparentize($primary, 0.8);
+      box-shadow: 0px 0px 0px 10px transparentize($primary, 0.8);
+    }
+    50% {
+      -moz-box-shadow: 0px 0px 0px 40px transparentize($primary, 0.8);
+      box-shadow: 0px 0px 0px 40px transparentize($primary, 0.8);
+    }
+    100% {
+      -moz-box-shadow: 0px 0px 0px 10px transparentize($primary, 0.8);
+      box-shadow: 0px 0px 0px 10px transparentize($primary, 0.8);
+    }
+}
+@keyframes pulse {
+    0% {
+      -moz-box-shadow: 0px 0px 0px 10px transparentize($primary, 0.8);
+      box-shadow: 0px 0px 0px 10px transparentize($primary, 0.8);
+    }
+    50% {
+      -moz-box-shadow: 0px 0px 0px 40px transparentize($primary, 0.8);
+      box-shadow: 0px 0px 0px 40px transparentize($primary, 0.8);
+    }
+    100% {
+      -moz-box-shadow: 0px 0px 0px 10px transparentize($primary, 0.8);
+      box-shadow: 0px 0px 0px 10px transparentize($primary, 0.8);
+    }
+}

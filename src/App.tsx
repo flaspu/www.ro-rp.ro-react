@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Components
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+// Pages
+import Home from './pages/Home';
+import Team from './pages/Team';
+
+
+class App extends React.Component {
+	constructor(props: any) {
+		super(props);
+    this.state = {};
+	}
+
+  render() {
+    return (
+      <div className="eclipse-top-right flex flex-col h-[100vh]">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="team" element={<Team />} />
+        </Routes>
+        <Footer />
+      </div>
+    );
+  }
 }
+
+// function App() {
+//   return (
+//     <div className="eclipse-top-right flex flex-col h-[100vh]">
+//       <Navbar />
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="team" element={<Team />} />
+//       </Routes>
+//       <Footer />
+//     </div>
+//   );
+// }
 
 export default App;

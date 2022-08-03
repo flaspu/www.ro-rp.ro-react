@@ -1,0 +1,88 @@
+.member {
+    border-radius: 20px;
+    .avatar {
+        height: 100px;
+        width: 100px;
+
+        background-position: center;
+        background-size: cover;
+    }
+
+    .roles {
+        display: flex;
+        gap: 4px;
+        .role {
+            border-radius: 25rem;
+            padding: 4px 12px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 12px;
+            margin: 4px 0px;
+
+            &.admin {
+                &:before {
+                    @apply bg-admin;
+                }
+            }
+
+            &.leadership {
+                &:before {
+                    @apply bg-leadership;
+                }
+            }
+
+            &.tester {
+                &:before {
+                    @apply bg-tester;
+                }
+            }
+
+            &.game-dev {
+                &:before {
+                    @apply bg-game-dev;
+                }
+            }
+
+            &.senior-dev {
+                &:before {
+                    @apply bg-senior-dev;
+                }
+            }
+
+            &.lead-dev {
+                &:before {
+                    @apply bg-lead-dev;
+                }
+            }
+
+            &.pm {
+                &:before {
+                    @apply bg-pm;
+                }
+            }
+
+            &.fm {
+                &:before {
+                    @apply bg-fm;
+                }
+            }
+
+            &.placeholder {
+                &:before {
+                    @apply bg-slate-400;
+                }
+            }
+
+            &:before {
+                content: '';
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                left: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 25rem;
+            }
+        }
+    }
+}

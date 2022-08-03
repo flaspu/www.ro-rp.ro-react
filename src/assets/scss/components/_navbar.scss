@@ -1,0 +1,45 @@
+
+
+.navbar {
+
+    user-select: none;
+
+    .branding {
+        img {
+            width: 70px;
+        }
+    }
+
+    li {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 45px;
+            width: 4px;
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translate(-50%, -100px);
+            background: transparent;
+            border-bottom-right-radius: 25rem;
+            border-bottom-left-radius: 25rem;
+
+            @apply ease-in-out duration-300;
+        }
+
+        &.active {
+            &::before {
+                transform: translate(-50%, 0px);
+                background: $primary;
+            }
+        }
+
+        &:hover {
+            &::before {
+                transform: translate(-50%, -20px);
+                background: $primary;
+            }
+        }
+    }
+}

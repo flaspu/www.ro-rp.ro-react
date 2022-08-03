@@ -1,0 +1,39 @@
+.btn {
+    height: 50px;
+
+    svg {
+        @apply mr-4;
+    }
+
+    @apply px-6 flex items-center justify-center font-semibold rounded-lg drop-shadow-xl hover:outline outline-offset-2 hover:outline-2
+}
+
+.btn-sm {
+    height: 40px;
+
+    svg {
+        @apply mr-4;
+    }
+
+    @apply px-4 flex items-center justify-center font-semibold rounded-lg drop-shadow-xl hover:outline outline-offset-2 hover:outline-2
+}
+
+.btn-icon {
+    width: 50px;
+    height: 50px;
+    @apply flex items-center justify-center font-semibold rounded-lg drop-shadow-xl hover:outline outline-offset-2 hover:outline-2
+}
+.btn-mobile {
+    img {
+        height: 40px;
+        width: 40px;
+        @apply ease-in-out duration-300
+    }
+
+    &:hover {
+        img {
+            stroke: $primary;
+            cursor: pointer;
+        }
+    }
+}
